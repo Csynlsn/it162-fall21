@@ -1,0 +1,305 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/** {
+    border: 1px solid black;
+}*/
+
+html {
+    background-color: lightgray;
+    font-family: 'Bitter', serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: rgb(200, 193, 193);
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background: white;
+    line-height: 2.5em;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+div.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+main {
+    border: 2px solid lightgray;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 1em 1em;
+}
+
+h2, h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color:rgb(14, 15, 15);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(90, 58, 58);
+    background-color: rgb(200, 193, 193);
+    text-decoration: none;
+}
+
+p {
+    text-indent: 1em;
+  }
+
+ 
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid lightgrey;
+}
+/*  END universal styles   */
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1001px) {
+	
+    div.wrapper {
+         width:80%;
+         margin:auto;
+     }
+ 
+
+    main {
+        width: 48%;
+        height: auto;
+        float: left;
+        margin: 1em -3em 1em 1em;
+        text-align: left; 
+    }
+
+    section {
+        width: 48%;
+        height: auto;
+        float: right;
+        margin: 1em
+
+    }
+    aside {
+        clear: both;
+        margin-top: 2em;
+        text-align: center;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+
+    img.desktop {
+        width: 100%;
+        float: left;  
+    }
+
+
+    img.tablet, img.phone {
+        display: none;
+    }
+    
+    p {
+        margin: 2em;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:601px) and (max-width:1000px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+        width: 40%;
+        float: right;
+        margin-right: 1em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    section {
+        width: 40%;
+        float: left;
+        margin: 1em;
+        
+    }
+
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+
+     h2 {
+        font-size: 1.5em;
+    }
+    
+    
+    img.tablet {
+        height: auto;
+        width: 100%;
+        display: inline-block
+    }
+
+    aside {
+        clear: both;
+        text-align: center;
+    }
+    
+    img.desktop, img.phone {
+        display: none;
+    }
+
+    p {
+        margin-top: 2em;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:600px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+
+    h2 {
+        text-align: center;
+        margin: .25em;
+    }
+    
+    p {
+        margin: .25em .5em;
+        padding: 1em;
+    }
+
+    img.phone {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    img.desktop, img.tablet {
+        display: none;
+    }
+
+    main {
+        border: none;
+    }
+
+    aside {
+        text-align: center;
+    }
+
+    aside p {
+        margin-top: 2em;
+    }
+}
+
+/*START nav styles*/
+
+/* Global rules */
+.topnav {
+    margin: auto;
+    background-color: rgb(95,95,95);
+    overflow: auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.topnav a.hover, .active {
+    background-color: rgb(200, 193, 193);
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* Responsive rules - apply when screen width is less than 1200px */
+
+@media screen and (max-width: 1199px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    .topnav {
+        width: 100%;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    .topnav {
+        width: 100%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    .topnav {
+        width: 100%;
+    }
+}
+
+/*END NAV styles*/
