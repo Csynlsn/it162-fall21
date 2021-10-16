@@ -17,7 +17,7 @@
         <a href="big/index.php">BIG</a>
         <a href="flowchart.php">Flowchart</a>
         <a href="fp/index.php">Final Project</a>  
-        <a href="contactme.php">Contact Kacie</a>
+        <a href="contact-me.php">Contact Kacie</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </nav>
       </header>
