@@ -64,6 +64,15 @@ footer {
 }
 /*  END universal styles   */
 
+
+/*START font awesome icon styles*/
+i.logo {
+    color:purple; 
+    text-shadow:1px 1px #ccc; 
+    font-size:1.25em; 
+}
+
+
 /* Responsive rules */
 
 /* DESKTOP */
@@ -108,10 +117,6 @@ footer {
     
     h2 {
         font-size: 2em;
-    }
-
-    h2.phone {
-        display: none;
     }
 
     img.desktop {
@@ -160,10 +165,6 @@ footer {
      h2 {
         font-size: 1.75em;
     }
-
-    h2.phone {
-        display: none;
-    }
     
     img.tablet {
         width: 100%;  
@@ -193,17 +194,13 @@ footer {
     h1 {
         width: 99%;
         padding: 0 1%;
+        font-size: 2em;
         text-align: center;
     }
 
     h2 {
         text-align: center;
         margin: .50em;
-    }
-
-    h2.tablet, h2.desktop {
-        display: none;
-        
     }
     
     p {

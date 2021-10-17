@@ -1,4 +1,3 @@
-<link href="css/forms.css" rel="stylesheet"/> 
 <?php
 /**
  * simple.php is a postback application designed to provide a 
