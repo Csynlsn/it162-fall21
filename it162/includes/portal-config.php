@@ -21,24 +21,25 @@ switch(THIS_PAGE){
 
     case 'index.php':
         $title = "Kacie's IT162 Portal Page";
-        $logo = 'fa-home';
+        $logo = 'fa-solid fa-bell';
+        $logo_color = ' style="color:#C39797"';
         $PageID = 'Welcome';
     break;
 
 
     case 'contact-me.php':
         $title = "Kacie's IT162 Contact Page";
-        $logo = 'fa-paper-plane-o';
-        $logo_color = ' style="color:#0f0"';
+        $logo = 'fa-solid fa-address-book';
+        $logo_color = ' style="color:#C39797"';
         $PageID = 'Contact Me';
     break;
 
 
     case 'aia.php':
         $title = "Kacie's IT162 AIA Page";
-        $logo = 'fa-universal-access';
-        $logo_color = ' style="color:#00f"';
-        $PageID = 'AIA';
+        $logo = 'fa-solid fa-users';
+        $logo_color = ' style="color:#313538"';
+        $PageID = 'Audience ~ Issues ~ Approach';
     break;
 
 
@@ -51,8 +52,8 @@ switch(THIS_PAGE){
 
     case 'flowchart.php':
         $title = "Kacie's IT162 Flowchart";
-        $logo = 'fa-pencil-square-o';
-        $logo_color = ' style="color:#00f"';
+        $logo = 'fa-solid fa-align-center';
+        $logo_color = ' style="color:8CA1D3"';
         $PageID = 'Flowchart';
     break;
 
@@ -79,7 +80,7 @@ switch(THIS_PAGE){
 
 $nav1['index.php'] = "Welcome";
 $nav1['aia.php'] = "AIA";
-$nav1['big.php'] = "Big";
+$nav1['big/index.php'] = "Big";
 $nav1['flowchart.php'] = "Flowchart";
 $nav1['fp/index.php'] = "Final Project";
 $nav1['contact-me.php'] = "Contact Kacie";

@@ -8,13 +8,13 @@
    <meta charset="utf-8" />
    <link href="css/portal.css" rel="stylesheet" />
    <link href="css/forms.css" rel="stylesheet"/> 
-   <script src="https://use.fontawesome.com/6a71565c22.js"></script>
+   <script src="https://use.fontawesome.com/5fe0cfcb17.js"></script>
   </head>
   <body class="PageID">
   <div class="wrapper">
       <header>
       <h1><a href="index.php"><i class="logo fa <?=$logo?>"<?=$logo_color?>></i>
-      Kacie&nbsp;Nielsen's IT162 Portal&nbsp;Page</a></h1>
+      Kacie&nbsp;Nielsen's IT162 Portal&nbsp;Website</a></h1>
       <nav class="topnav" id="myTopnav">
         <?=makeLinks($nav1)?>
         <!-- <a href="index.php" class="active">Welcome</a>

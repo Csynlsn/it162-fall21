@@ -7,10 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
 html {
-    background-color: lightgray;
+    background-color:lightgray;
     font-family: 'Bitter', serif;
-    font-size: 0.95em;
-    line-height: 2.25em;
+    font-size:0.95em;
+    line-height:2.25em;
 }
 
 ::selection {
@@ -19,57 +19,58 @@ html {
 }
 
 h1 {
-    font-weight: normal;
-    margin: auto;
-    background: white;
-    line-height: 2.5em;
-    text-shadow: 4px 4px 4px #aaa;
+    font-weight:normal;
+    margin:auto;
+    background:white;
+    line-height:2.5em;
+    text-shadow:4px 4px 4px #aaa;
 }
 
 div.wrapper {
-    background-color: white;
-    overflow: auto;
+    background-color:white;
+    overflow:auto;
 }
 
 p {
-    margin: 1em 1em;
-    text-indent: 1em;
+    margin:1em 1em;
+    text-indent:1em;
 }
 
 h2, h3 {
-    font-weight: normal;
-    margin-left: 1em;
-    line-height: 1em;
+    font-weight:normal;
+    margin-left:1em;
+    line-height:1em;
 }
 
 a {
     color:rgb(14, 15, 15);
-    text-decoration: none;
+    text-decoration:none;
 }
 
 a:hover {
-    color: rgb(90, 58, 58);
-    background-color: rgb(200, 193, 193);
-    text-decoration: none;
+    color:rgb(90, 58, 58);
+    background-color:rgb(200, 193, 193);
+    text-decoration:none;
 }
 
  
 footer {
-    clear: both;
-    text-align: center;
-    padding: 1em;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
-    margin: 2em 0;
+    clear:both;
+    text-align:center;
+    padding:1em;
+    border-top:2px solid lightgrey;
+    border-bottom:2px solid lightgrey;
+    margin:2em 0;
 }
 /*  END universal styles   */
 
 
 /*START font awesome icon styles*/
 i.logo {
-    color:purple; 
     text-shadow:1px 1px #ccc; 
     font-size:1.25em; 
+    margin-left:2em;
+   
 }
 
 
@@ -101,86 +102,83 @@ i.logo {
     }
  
     aside {
-        width: 49%;
-        height: auto;
-        float: right;
-        margin: 1em 1em 1em 0;
+        width:49%;
+        height:auto;
+        float:right;
+        margin:1em 1em 1em 0;
     }
     
     h1 {
-        width: 90%;
-        padding-left: 10%;
-        margin-top: .25em;
-        margin-bottom: .25em;
-        font-size: 2.5em;
+        width:90%;
+        font-size:2.5em;
     }
     
     h2 {
-        font-size: 2em;
+        font-size:2em;
     }
 
     img.desktop {
-        width: 100%;
-        float: left;  
-        margin: 0;
+        width:100%;
+        float:left;  
+        margin:0;
     }
 
     img.tablet, img.phone {
-        display: none;
+        display:none;
     }
     
     p {
-        margin: 1em;
-        padding-left: 2em;
-        padding-right: 2em;
+        margin:1em;
+        padding-left:2em;
+        padding-right:2em;
     }
 }
 
 /* TABLET */
 @media all and (min-width:681px) and (max-width:1199px) {
     div.wrapper {
-        width: 90%;
-        margin: auto;
+        width:90%;
+        margin:auto;
     }
 
     main {
-        width: 40%;
-        float: right;
-        margin: 1em 1em 1em 0;
-        text-align: center;
-        line-height: 2em;
+        width:40%;
+        float:right;
+        margin:1em 1em 1em 0;
+        text-align:center;
+        line-height:2em;
     }
 
     aside {
-        width: 50%;
-        float: left;
-        margin: 1em;   
+        width:50%;
+        float:left;
+        margin:1em;   
     }
 
     h1 {
-        width: 89%;
-        padding-left: 1%;
+        width:89%;
+        padding-left:1%;
     }
 
      h2 {
-        font-size: 1.75em;
+        font-size:1.75em;
     }
     
     img.tablet {
-        width: 100%;  
+        width:100%;  
     }
 
     img.desktop, img.phone {
-        display: none;
+        display:none;
     }
 
     p {
-        margin-top: 2em;
+        margin-top:2em;
     }
 
     div.text-container {
-        border: 2px solid lightgrey;
-        padding-bottom: 4em;
+        border:2px solid lightgrey;
+        padding-bottom:4em;
     }
 
 }
