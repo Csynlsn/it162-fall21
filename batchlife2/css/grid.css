@@ -1,0 +1,122 @@
+/* GRID */
+
+.wrapper {
+    display:grid;
+    grid-gap:4px;
+    grid-template-columns: 
+        repeat(12, 1fr);    
+}
+
+.wrapper > * {
+    grid-column: 1 / span 12;
+} 
+
+/*MOBILE*/
+@media (max-width: 559px) {
+    nav a {
+        font-size:1.8em;
+    }
+    /*SHOP*/
+    .home-shop {
+       display:flex;
+       grid-gap:2%;
+       flex-direction:row;
+       flex-wrap:wrap;
+    }
+    
+
+}/*END MOBILE*/
+
+
+/*TABLET MAIN LAYOUT GRID*/
+@media (min-width: 560px) {
+    .home-main {
+        grid-column: 5 / span 8;
+    }
+    .home-about {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+    .home-shop {
+        grid-column: 5 / span 8;
+        grid-row: 3 / span 2;
+    }
+    .home-aside {
+        grid-column: 1 / span 4;
+        grid-row: 3 /span 1;
+    }
+    .home-contact {
+        grid-column: 1 / span 4;
+        grid-row: 4 / span 1;
+    }
+    /*END TABLET MAIN LAYOUT*/
+
+    /*SHOP*/
+    .home-shop {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
+    div.shop {
+        width:50%;
+    }
+
+} /*END TABLET*/
+
+
+/*DESKTOP*/
+/*DESKTOP MAIN LAYOUT*/
+@media (min-width: 900px) {
+    .home-main {
+        grid-column: 1 / span 6;
+    }
+    .home-about {
+        grid-column: 7 / span 6;
+    }
+    .home-shop {
+        grid-column: 1 / span 12;
+        grid-row: 3;
+    }
+    .home-aside {
+        grid-column: 1 / span 6;
+        grid-row: 4;
+    }
+    .home-contact {
+        grid-column: 7 / span 6;
+        grid-row: 4;
+    }
+    /*END DESKTOP MAIN LAYOUT*/
+
+    /*SHOP*/
+    .home-shop {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content: space-around;
+    }
+    div.shop {
+        width:25%;
+    }
+
+} /*END DESKTOP*/
+
+ 
+ /*DESKTOP EXTRA LARGE*/
+ /*SHOP*/
+@media (min-width: 1300px) {
+    .home-shop {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    div.shop {
+        width:33%;
+    }
+} /*END DESKTOP*/
+
+
+/*FOOTER GRID STYLES*/
+
+
+

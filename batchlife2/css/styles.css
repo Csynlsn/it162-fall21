@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:1px solid black;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.wrapper {
+    width:100%;
+    min-width:360px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* img { 
+    display:block;
+    max-width: 100%;
+}  */
+
+/* HEADER/NAV STYLES */
+
+nav ul {
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a {
+    font-family: 'Permanent Marker', cursive;
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+nav li {
+    display:inline-block;
+}
+
+header {
+    overflow: hidden;
+    background-color:lightgray;
+} 
+
+
+
+/* LOGO/ICON STYLES */
+
+img.logo-round {
+    width:20%;
+    margin-left:10px;
+}
+
+img.logo-batch {
+    margin:0 auto;
+    max-width:100%;
+}
+
+/*INSTAGRAM*/
+.ig {
+    text-align: center;
+    text-decoration: none;
+    background: rgb(217, 16, 167);
+    border-radius: 50%;
+    width:1.6em;
+}
+    
+.ig:hover {
+      opacity: 0.7;
+  }
+
+/*SHOP SECTION*/
+img.shop { 
+    display:block;
+    max-width: 100%;
+} 
+  
+
+
+
+
+
+
+
+/* FOOTER STYLES  */
+
+/*GRID FOR TOP OF FOOTER*/
+footer {
+    display:grid;
+    grid-gap:4px;
+    grid-template-columns: 
+        repeat(6, 1fr);  
+}
+.sign-up {
+    grid-column: 1 / span 3;
+}
+.quick-links {
+    grid-column: 4 / span 3;
+}
+.bottom-links {
+    grid-column: 1 / span 6;
+}
+
+
+/*BOTTOM FOOTER STYLES*/
+footer {
+    height: auto;
+    background:#e7ebee;
+}
+.bottom-links {
+    display:flex;
+    justify-content: space-evenly;
+}
+.bottom-links li {
+    display:inline-block;
+    list-style-type: none;
+}
